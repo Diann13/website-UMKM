@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FOCTUS – Photography</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-[#0f1117] text-white">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full z-50">
+  <div class="bg-gradient-to-b from-[#0b0e16] to-[#111522] backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-8 h-[72px] flex items-center justify-between">
+
+      <!-- LOGO -->
+      <div class="text-white tracking-wide text-[32px] font-bold">
+        FOCTUS
+      </div>
+
+      <!-- MENU -->
+      <ul class="hidden md:flex items-center space-x-10 text-sm font-medium">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#price" class="nav-link">Pricelist</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- MOBILE BTN -->
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden md:hidden bg-[#111522] px-8 py-4 space-y-3 text-sm">
+    <a href="#home" class="block">Home</a>
+    <a href="#price" class="block">Pricelist</a>
+    <a href="#gallery" class="block">Gallery</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+</nav>
+
+</style>
+
+<!-- HERO -->
+<section id="home"
+  class="h-screen bg-cover bg-center flex items-center"
+  style="background-image:url('assets/Head.png')">
+  <div class="bg-black/60 w-full h-full flex items-center">
+    <div class="max-w-3xl mx-auto px-6 text-center animate-fadeUp">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Capture Your Moment
+      </h2>
+      <p class="text-gray-300 mb-8">
+        A professional photographer that will help you capture your amazing moment
+      </p>
+      <a href="#price"
+        class="bg-emerald-600 px-8 py-3 rounded-full font-semibold
+               hover:bg-emerald-700 transition">
+        Get Started
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PRICELIST -->
+<section id="price" class="py-20 bg-[#131722] reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-2">Pricelist</h3>
+    <p class="text-center text-gray-400 mb-12">
+      Get your photo taken from IDR 4.500/photo
+    </p>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <!-- CARD 1 -->
+      <div class="bg-[#181b28] rounded-xl shadow-md p-8 flex flex-col items-center text-center transition hover:scale-105 hover:shadow-lg duration-200">
+        <h4 class="text-xl font-semibold text-white mb-2">One Photo</h4>
+        <p class="text-emerald-400 text-lg font-bold">IDR 4.500</p>
+      </div>
+      <!-- CARD 2 -->
+      <div class="bg-[#181b28] rounded-xl shadow-md p-8 flex flex-col items-center text-center transition hover:scale-105 hover:shadow-lg duration-200">
+        <h4 class="text-xl font-semibold text-white mb-2">One Photo + Video</h4>
+        <p class="text-emerald-400 text-lg font-bold">IDR 20.000</p>
+      </div>
+      <!-- CARD 3 -->
+      <div class="bg-[#181b28] rounded-xl shadow-md p-8 flex flex-col items-center text-center transition hover:scale-105 hover:shadow-lg duration-200">
+        <h4 class="text-xl font-semibold text-white mb-2">One Session (60 min)</h4>
+        <p class="text-emerald-400 text-lg font-bold">IDR 150.000</p>
+      </div>
+      <!-- CARD 4 -->
+      <div class="bg-[#181b28] rounded-xl shadow-md p-8 flex flex-col items-center text-center transition hover:scale-105 hover:shadow-lg duration-200">
+        <h4 class="text-xl font-semibold text-white mb-2">Session + Video</h4>
+        <p class="text-emerald-400 text-lg font-bold">IDR 300.000</p>
+      </div>
+    </div>
+
+    <p class="text-center text-sm text-gray-400 mt-6">
+      NB: all photo + video only in Drive
+    </p>
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery" class="py-20 reveal">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-12">Gallery</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="img-wrap"><img src="assets/img1.png"></div>
+      <div class="img-wrap"><img src="assets/img2.png"></div>
+      <div class="img-wrap"><img src="assets/img1.png"></div>
+      <div class="img-wrap"><img src="assets/img2.png"></div>
+      <div class="img-wrap"><img src="assets/img1.png"></div>
+      <div class="img-wrap"><img src="assets/img2.png"></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-[#131722] reveal">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h3 class="text-3xl font-bold mb-3">Contact Us</h3>
+      <p class="text-gray-400 mb-3">Tell us what you need, we'll help you</p>
+      <div class="flex items-center space-x-2 mt-2">
+        <span class="text-xl">📸</span>
+        <span>
+          Instagram: <span class="text-gray-300 font-medium">@foctus._</span>
+        </span>
+      </div>
+    </div>
+
+    <form class="space-y-5 bg-[#181b28] p-8 rounded-xl shadow-lg" onsubmit="return sendWA(event)">
+      <div>
+        <label for="waName" class="block text-gray-300 text-sm mb-1">Name</label>
+        <input
+          class="w-full px-4 py-3 rounded-lg bg-[#1b2030] text-white outline-none focus:ring-2 focus:ring-emerald-500 transition"
+          id="waName"
+          placeholder="Name"
+          required
+        >
+      </div>
+      <div>
+        <label for="waEmail" class="block text-gray-300 text-sm mb-1">Email</label>
+        <input
+          class="w-full px-4 py-3 rounded-lg bg-[#1b2030] text-white outline-none focus:ring-2 focus:ring-emerald-500 transition"
+          id="waEmail"
+          type="email"
+          placeholder="Email"
+          required
+        >
+      </div>
+      <div>
+        <label for="waRequest" class="block text-gray-300 text-sm mb-1">Package</label>
+        <select
+          class="w-full px-4 py-3 rounded-lg bg-[#1b2030] text-white outline-none focus:ring-2 focus:ring-emerald-500 transition"
+          id="waRequest"
+          required
+          onchange="toggleOtherOption(this)"
+        >
+          <option disabled selected>Select Package</option>
+          <option>One Photo</option>
+          <option>One Photo + Video</option>
+          <option>One Session</option>
+          <option>Session + Video</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div id="otherInputWrap" class="hidden">
+        <label for="waRequestOther" class="block text-gray-300 text-sm mb-1">Please describe your request</label>
+        <input
+          class="w-full px-4 py-3 rounded-lg bg-[#1b2030] text-white outline-none focus:ring-2 focus:ring-emerald-500 transition"
+          id="waRequestOther"
+          placeholder="Type your custom request"
+          oninput="this.setAttribute('data-has-value', !!this.value)"
+        >
+      </div>
+      <script>
+        function toggleOtherOption(select) {
+          const otherInputWrap = document.getElementById('otherInputWrap');
+          const otherInput = document.getElementById('waRequestOther');
+          if(select.value === 'other') {
+            otherInputWrap.classList.remove('hidden');
+            otherInput.required = true;
+            otherInput.focus();
+          } else {
+            otherInputWrap.classList.add('hidden');
+            otherInput.required = false;
+            otherInput.value = '';
+          }
+        }
+      </script>
+      <div>
+        <label for="waDate" class="block text-gray-300 text-sm mb-1">Date</label>
+        <input
+          type="date"
+          id="waDate"
+          class="w-full px-4 py-3 rounded-lg bg-[#1b2030] text-white outline-none focus:ring-2 focus:ring-emerald-500 transition [&::-webkit-calendar-picker-indicator]:invert"
+          required
+          onfocus="this.showPicker && this.showPicker()"
+          onclick="this.showPicker && this.showPicker()"
+          style="color:white;"
+        >
+      </div>
+      <div>
+        <label for="waMsg" class="block text-gray-300 text-sm mb-1">Message</label>
+        <textarea
+          class="w-full px-4 py-3 rounded-lg bg-[#1b2030] text-white outline-none focus:ring-2 focus:ring-emerald-500 transition h-32 resize-none"
+          id="waMsg"
+          placeholder="Message"
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 transition py-3 rounded-full font-semibold text-white shadow-md">
+        Send via WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<footer class="py-10 bg-gradient-to-t from-[#111522] to-[#181b28] text-gray-400 mt-16 border-t border-[#23263a] shadow-2xl">
+  <div class="max-w-3xl mx-auto px-5 flex flex-col items-center">
+    <div class="flex items-center gap-3 mb-3">
+      <span class="text-3xl bg-emerald-500/10 rounded-full p-2 animate-pulse shadow-lg">
+        <svg class="w-8 h-8 text-emerald-400" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+          <rect x="2.5" y="6.5" width="19" height="13" rx="4" stroke="currentColor" fill="#10b98122"/>
+          <circle cx="12" cy="13" r="3" fill="#10b981" stroke="#10b981" stroke-width="1"/>
+          <rect x="17" y="8.5" width="2" height="2" rx="1" fill="#10b981"/>
+        </svg>
+      </span>
+      <span class="font-bold text-2xl text-white tracking-widest drop-shadow-md">FOCTUS</span>
+    </div>
+    <p class="mb-2 text-lg text-center font-medium">
+      &copy; 2026 <span class="text-emerald-400 font-extrabold">FOCTUS</span> &mdash; All rights reserved.
+    </p>
+    <p class="mb-3 text-sm italic text-gray-400 text-center">
+      Made with <span class="text-emerald-400 font-medium">❤️</span> by mahasiswa <span class="text-emerald-400 font-semibold">TEKNOLOGI REKAYASA PERANGKAT LUNAK</span> Politeknik Indonusa Surakarta
+    </p>
+    <div class="text-[11px] text-gray-600 mt-6 tracking-wide text-center w-full opacity-80">
+      Crafted with <span class="text-emerald-400">passion</span> &amp; <span class="text-emerald-400">precision</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
