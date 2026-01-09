@@ -27,7 +27,7 @@ Tanggal: ${waDate.value}
 Pesan: ${waMsg.value}`;
 
   window.open(
-    `https://wa.me/6281703428151?text=${encodeURIComponent(msg)}`,
+    `https://wa.me/6282137405187?text=${encodeURIComponent(msg)}`,
     "_blank"
   );
 }
